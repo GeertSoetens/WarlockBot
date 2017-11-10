@@ -182,7 +182,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
     if (message.startsWith)
 
-    if (message.startsWith("Warlock") || message.startsWith("warlock")) {
+    if (message.match(/^warlock/i)) {
 
         switch (getRandomNumber(1, 5)) {
 
