@@ -76,12 +76,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 // });
             break;
             // Youri's Functie
-            case 'Omae_wa_mou_shindeiru':
+            if (message.match(/^omae\s{0,}wa\s{0,}mou\s{0,}shindeiru\s{0,}$/i)){
                 bot.sendMessage({
                     to: channelID,
                     message: 'NANI!?!?!?!?!?!'
                 });
-                break;
+            }
+          
             case 'd20':
                 bot.sendMessage({
                     to: channelID,
