@@ -242,4 +242,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             message: "Oh come on! Just say Suck a dick!"
         })
     }
+
+    if (message.match(/^omae\s{0,}wa\s{0,}mou\s{0,}shindeiru\s{0,}$/i)){
+        bot.sendMessage({
+            to: channelID,
+            message: 'NANI!?!?!?!?!?!'
+        });
+    }
 });
