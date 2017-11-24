@@ -16,3 +16,5 @@ At the end of a certain time period, I'm supposed to hold a workshop for the cla
 The sources I used are as follows;
 
 [Discord.io documentation](https://izy521.gitbooks.io/discord-io/content/)
+
+[Discord bot tutorial (This tutorial is the main reason I'm using Discord.io, discord)](https://medium.com/@renesansz/tutorial-creating-a-simple-discord-bot-9465a2764dc0)
