@@ -15,4 +15,4 @@ At the end of a certain time period, I'm supposed to hold a workshop for the cla
 #### Sources
 The sources I used are as follows;
 
-[discord.io documentation](https://izy521.gitbooks.io/discord-io/content/)
+[Discord.io documentation](https://izy521.gitbooks.io/discord-io/content/)
