@@ -180,40 +180,51 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         }
     }
 
-    if (message.startsWith)
-
     if (message.match(/^warlock/i)) {
+        if (userID === "256131905462730752") {
+            bot.sendMessage({
+                to: channelID,
+                message: "Stefan, you called?",
+                typing: true
+            })
+        } else if (userID === "197416203441012739") {
+            bot.sendMessage({
+                to: channelID,
+                message: "Master, you called? I'm at your service.",
+                typing: true
+            })
+        } else {
+            switch (getRandomNumber(1, 5)) {
 
-        switch (getRandomNumber(1, 5)) {
-
-            case 1:
-                bot.sendMessage({
-                    to: channelID,
-                    message: "What!? Someone called me? I don't have time for you!",
-                    typing: true
-                });
-                break;
-            case 2:
-                bot.sendMessage({
-                    to: channelID,
-                    message: "Stop bothering me " + user + ", can't you see I'm busy!",
-                    typing: true
-                });
-                break;
-            case 3:
-                bot.sendMessage({
-                    to: channelID,
-                    message: "Did someone say my name? I'm trying to summon demons here!",
-                    typing: true
-                });
-                break;
-            case 4:
-                bot.sendMessage({
-                    to: channelID,
-                    message: "Urgh! I'm trying to concentrate here! Silence " + user + "!",
-                    typing: true
-                });
-                break;
+                case 1:
+                    bot.sendMessage({
+                        to: channelID,
+                        message: "What!? Someone called me? I don't have time for you!",
+                        typing: true
+                    });
+                    break;
+                case 2:
+                    bot.sendMessage({
+                        to: channelID,
+                        message: "Stop bothering me " + user + ", can't you see I'm busy!",
+                        typing: true
+                    });
+                    break;
+                case 3:
+                    bot.sendMessage({
+                        to: channelID,
+                        message: "Did someone say my name? I'm trying to summon demons here!",
+                        typing: true
+                    });
+                    break;
+                case 4:
+                    bot.sendMessage({
+                        to: channelID,
+                        message: "Urgh! I'm trying to concentrate here! Silence " + user + "!",
+                        typing: true
+                    });
+                    break;
+            }
         }
 
         logger.info(bot.username + ' (' + bot.id + ') ' + 'Replied to a message successfully.');
