@@ -17,4 +17,4 @@ The sources I used are as follows;
 
 [Discord.io documentation](https://izy521.gitbooks.io/discord-io/content/)
 
-[Discord bot tutorial (This tutorial is the main reason I'm using Discord.io, discord)](https://medium.com/@renesansz/tutorial-creating-a-simple-discord-bot-9465a2764dc0)
+[Discord bot tutorial (This tutorial is the main reason I'm using Discord.io)](https://medium.com/@renesansz/tutorial-creating-a-simple-discord-bot-9465a2764dc0)
