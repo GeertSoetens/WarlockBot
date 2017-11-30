@@ -177,6 +177,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     typing: true
                 });
                 break;
+            case 'niko':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Ayy it\'s ya boi, niko'
+                })
+                bot.uploadFile({
+                    to: channelID,
+                    file: "images/1484600049_niko.gif"
+                })
         }
     }
 
