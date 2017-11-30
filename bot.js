@@ -180,7 +180,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'niko':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Ayy it\'s ya boi, niko'
+                    message: 'Summoning an aspect of Niko...'
                 })
                 bot.uploadFile({
                     to: channelID,
