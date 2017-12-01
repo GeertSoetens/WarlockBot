@@ -256,7 +256,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     '!meaningoflife     -   Function added for a friend, replies with the meaning of life.\n' +
                     '!stefan            -   Function added for a friend.\n' +
                     '!niko              -   You gotta try this one out.\n' +
-                    '!info              -   Misc info about WARLOCK & contact info' +
+                    '!info              -   Misc info about WARLOCK & contact info.' +
                     '```'
                 });
                 break;
