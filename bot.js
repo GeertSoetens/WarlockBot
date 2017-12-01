@@ -186,6 +186,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: "images/1484600049_niko.gif"
                 })
+                break;
         }
     }
 
