@@ -187,6 +187,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     file: "images/1484600049_niko.gif"
                 });
                 break;
+            default:
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'I\'m sorry, I didn\'t understand that. Maybe your capitalization was wrong? or type !help for a list of commands.'
+                })
         }
     }
 
