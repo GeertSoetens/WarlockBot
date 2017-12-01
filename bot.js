@@ -181,11 +181,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'Summoning an aspect of Niko...'
-                })
+                });
                 bot.uploadFile({
                     to: channelID,
                     file: "images/1484600049_niko.gif"
-                })
+                });
                 break;
         }
     }
