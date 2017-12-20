@@ -48,9 +48,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                         to: channelID,
                         message: "Rolling a custom d" + args[0]
                     });
+
+                    let numtoroll = parseInt(args[0]) + 1;
+
                     bot.sendMessage({
                         to: channelID,
-                        message: "The dice has rolled! Result: " + getRandomNumber(1, (args[0] + 1)),
+                        message: "The dice has rolled! Result: " + getRandomNumber(1, numtoroll),
                         typing: true
                     })
                 } else if (typeof args[1] !== 'undefined') {
