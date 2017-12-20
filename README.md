@@ -25,7 +25,11 @@ Since recent, my bots haven't worked for a while. Apperiantly this is because th
 
 To Solve this issue all you have to do is instead of using
  
-    `npm install discord.io` 
-use 
+ ```
+    npm install discord.io
+ ```
+use
 
-    `npm install woor/discord.io#gateway_v6`
+ ```
+    npm install woor/discord.io#gateway_v6
+ ```
