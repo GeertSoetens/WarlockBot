@@ -2,6 +2,7 @@ const Discord = require('discord.io');
 const logger = require('winston');
 const auth = require('./auth.json');
 const info = require('./package.json');
+const users = require('./users.json');
 
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {
@@ -42,6 +43,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         args = args.splice(1);
         switch (cmd) {
 
+            // Custom dice function
             case 'd':
                 if (!isNaN(args[0])) {
                     bot.sendMessage({
@@ -73,6 +75,22 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     });
                 }
                 break;
+
+            // Music Function (WIP)
+            case 'play':
+            case 'p':
+                bot.joinVoiceChannel(channelID, function(error, events) {
+
+                    if (error) return logger.error(error);
+
+                    bot.sendMessage({
+                        to: channelID,
+                        message: "Bot should play something here, still wip"
+                    })
+
+
+                });
+            break;
             case 'ping':
                 switch (getRandomNumber(1, 11)) {
 
@@ -204,7 +222,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     typing: true
                 });
                 bot.sendMessage({
-                    to: 256131905462730752,
+                    to: users.requsers.stefan.id,
                     message: user + ' heeft !stefan gebruikt. Nog iemand weet dus dat jij cool bent.'
                 });
                 break;
@@ -217,21 +235,18 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: "images/1484600049_niko.gif"
                 });
-                break;
-            // Private messaging is broken in my version of DISCORD.IO. You have to fix it by changing:
-                /*
-                    DCP.createDMChannel = function(userID, callback) {
-                        var client = this;
-                        this._req('post ', Endpoints.USER(client.id) + "/channels", {recipient_id: userID}, function(err, res) {
-                            if (!err && goodResponse(res)) client._uIDToDM[res.body.recipient_id] = res.body.id;
-                            handleResCB("Unable to create DM Channel", err, res, callback);
-                        });
-                    };
+            break;
 
-                    recipient_id && recipient.id should both be recipient_id!!!
-
-                    on Index.js line 923
-                */
+            case 'puretest':
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Pasting user & user ID." + " - " + users.requsers.geerterig.name + " [" + users.requsers.geerterig.id + "]."
+                });
+                bot.sendMessage({
+                    to: users.requsers.geerterig.id,
+                    message: "Test successful. Good job boi!"
+                });
+            break;
             case 'help':
                 bot.sendMessage({
                     to: channelID,
@@ -336,7 +351,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             }
         }
 
-        logger.info(bot.username + ' - (' + bot.id + ') ' + 'Replied to a message successfully.');
+        // logger.info(bot.username + ' - (' + bot.id + ') ' + 'Replied to a message successfully.');
     }
 
     if (message.match(/daan/i)) {
