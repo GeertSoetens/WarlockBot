@@ -12,6 +12,9 @@ Please refrain from copying WARLOCK exactly. You are free to base your bot of WA
 WARLOCK was created for school. For the class Innovation. The purpose is to learn about new things in the field of Web Development that may change the future of my (or our) career.
 At the end of a certain time period, I'm supposed to hold a workshop for the class on how to develop a discord bot. At the end of that workshop, the least everyone should be able to do is write a discord bot that can reply to basic commands.
 
+WARLOCK BOT WILL EVENTUALLY RECORD USER NAME AND ID.
+FOR GUILD MANAGING PURPOSES.
+
 #### Sources
 The sources I used are as follows;
 
