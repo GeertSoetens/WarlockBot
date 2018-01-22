@@ -21,7 +21,7 @@ The sources I used are as follows;
 
 #### Warning
 
-Since recent, my bots haven't worked for a while. Apperiantly this is because the V5 gateway is depricated. I had not heard about this, but it's easily solvable.
+Since recent, my bots haven't worked for a while. Apperiantly this is because the V5 gateway is depricated. I had not heard about this, but it's easily solved.
 
 To Solve this issue all you have to do is instead of using
  
