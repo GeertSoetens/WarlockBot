@@ -236,17 +236,6 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     file: "images/1484600049_niko.gif"
                 });
             break;
-
-            case 'puretest':
-                bot.sendMessage({
-                    to: channelID,
-                    message: "Pasting user & user ID." + " - " + users.requsers.geerterig.name + " [" + users.requsers.geerterig.id + "]."
-                });
-                bot.sendMessage({
-                    to: users.requsers.geerterig.id,
-                    message: "Test successful. Good job boi!"
-                });
-            break;
             case 'help':
                 bot.sendMessage({
                     to: channelID,
