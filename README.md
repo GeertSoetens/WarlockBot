@@ -33,3 +33,16 @@ use
  ```
     npm install woor/discord.io#gateway_v6
  ```
+
+#### Disclaimer
+This bot isn't made to make guilds / servers easier to manage. It's allot of bullshit I'll be honest.
+It's made for school, but ended up as a personal project filled with inside-jokes with me and my friends.
+If anything's offensive, don't take it personal, it's just a joke (probably). Anyway, if you do decide to use this bot,
+when it becomes public, I hope you do enjoy my little creation. Eventually this bot will be able to manage users and play music,
+so it won't be too bad to have on your guild / server.
+
+So yeah, this bot WILL record your user info like username and ID for future refference / use. Altough it hasn't been
+implemented yet, it will be soon. Please be warned before you use this bot, I am not to be held accountable if suddenly some random
+dude sends you a message. The user JSON won't be public so it should be safe.
+
+Anyway, I hope you enjoy! You can freely use this as a mold too. Soon I'll add a mold with tutorials etc.
