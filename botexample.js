@@ -20,8 +20,9 @@ logger.add(logger.transports.Console, {
 
 logger.level = 'debug';
 
-// Now, let's create a function that'll be useful to us later.
-// This is basic JS, so I assume you know what this does.
+/*  Now, let's create a function that'll be useful to us later.
+This is basic JS, so I assume you know what this does.
+*/
 
 function getRandomNumber(min, max) {
   min = Math.ceil(min);
