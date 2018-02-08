@@ -1,6 +1,6 @@
 {
   "name": "Warlock",
-  "version": "1.0.0",
+  "version": "0.1.3",
   "description": "Web Development bot for class WEB2a",
   "main": "bot.js",
   "author": "Geert Soetens",
