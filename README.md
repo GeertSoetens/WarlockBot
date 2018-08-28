@@ -1,3 +1,5 @@
+!! Discord.IO has since been depricated. Warlockbot is not getting updated anymore until I find motivation to develop another bot !!
+
 # WarlockBot
 RDF's Discord bot, Warlock.
 
